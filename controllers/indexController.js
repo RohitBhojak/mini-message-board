@@ -55,4 +55,8 @@ const renderHomePage = (req, res) => {
   });
 };
 
-module.exports = { renderHomePage };
+const renderForm = (req, res) => {
+  return res.render("form");
+};
+
+module.exports = { renderHomePage, renderForm };

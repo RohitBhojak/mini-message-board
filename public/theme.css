@@ -1,0 +1,17 @@
+:root {
+  --bg-color: #f8f5f0;
+  --card-bg: #ffffff;
+  --text-main: #3c2a21;
+  --text-muted: #8e8279;
+  --accent: #3a8e8d;
+  --accent-hover: #2c6e6d;
+  --border-light: #d6eaf8;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}

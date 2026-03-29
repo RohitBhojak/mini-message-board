@@ -1,10 +1,10 @@
 const { Router } = require("express");
-const { renderHomePage } = require("../controllers/indexController");
+const { renderHomePage, renderForm } = require("../controllers/indexController");
 
 const indexRouter = Router();
 
 indexRouter.get("/", renderHomePage);
 
-// indexRouter.get("/new");
+indexRouter.get("/new", renderForm);
 
 module.exports = indexRouter;
