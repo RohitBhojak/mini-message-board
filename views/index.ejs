@@ -2,14 +2,30 @@
 
 <head>
   <title>Message board</title>
+  <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
-  <% messages.map(message => { %>
-  <div class="user"><%= message.user %></div>
-  <div class="message"><%= message.text %></div>
-  <div class="date"><%= message.date %></div>
-  <% }) %>
+  <h1>Mini Message Board</h1>
+  <div class="card-container">
+    <% messages.map(message => { %>
+    <div class="card">
+      <div class="profile" style="background-color: <%= stringToColor(message.user) %>">
+        <%= message.user.charAt(0) %>
+      </div>
+      <div class="message">
+        <div class="user"><%= message.user %></div>
+        <div class="text"><%= message.text %></div>
+        <div class="date"><%= message.added %></div>
+      </div>
+    </div>
+    <% }) %>
+    <a href="/new">Add New Message</a>
+  </div>
 </body>
+
+<script>
+  document.querySelector('a').scrollIntoView();
+</script>
 
 </html>
