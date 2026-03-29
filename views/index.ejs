@@ -1,0 +1,15 @@
+<html>
+
+<head>
+  <title>Message board</title>
+</head>
+
+<body>
+  <% messages.map(message => { %>
+  <div class="user"><%= message.user %></div>
+  <div class="message"><%= message.text %></div>
+  <div class="date"><%= message.date %></div>
+  <% }) %>
+</body>
+
+</html>
