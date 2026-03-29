@@ -1,8 +1,10 @@
-# 📨 Mini Message Board
+# [📨 Mini Message Board](https://mini-message-board-eun8.onrender.com/)
 
 A stylish, functional web application built with **Node.js**, **Express**, and **EJS**. This project allows users to view a live feed of messages and contribute their own in real-time.
 
 <img width="1470" height="956" alt="Screenshot 2026-03-29 at 9 54 49 PM" src="https://github.com/user-attachments/assets/e3a9719b-3d9c-46f7-815f-374d7350424a" />
+
+> Live link: [https://mini-message-board-eun8.onrender.com/](https://mini-message-board-eun8.onrender.com/)
 
 ---
 
