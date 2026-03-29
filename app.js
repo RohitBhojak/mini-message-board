@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const indexRouter = require("./routes/indexRouter");
+const { get404, handleError } = require("./controllers/errorController");
 
 const PORT = process.env.PORT;
 
@@ -15,6 +16,9 @@ app.use(express.static(assetsPath));
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/", indexRouter);
+
+app.use(get404);
+app.use(handleError);
 
 app.listen(PORT, (err) => {
   if (err) throw err;

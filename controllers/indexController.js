@@ -22,26 +22,6 @@ const messages = [
     user: "Sophie",
     added: new Date(),
   },
-  {
-    text: "Hi there!",
-    user: "Rohit",
-    added: new Date(),
-  },
-  {
-    text: "Hello World!",
-    user: "Nilisha",
-    added: new Date(),
-  },
-  {
-    text: "How are you?",
-    user: "Amando",
-    added: new Date(),
-  },
-  {
-    text: "Good morning!",
-    user: "Sophie",
-    added: new Date(),
-  },
 ];
 
 const renderHomePage = (req, res) => {
