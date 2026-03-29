@@ -59,4 +59,10 @@ const renderForm = (req, res) => {
   return res.render("form");
 };
 
-module.exports = { renderHomePage, renderForm };
+const createMessage = (req, res) => {
+  const { username, message } = req.body;
+  messages.push({ user: username, text: message, added: new Date() });
+  res.redirect("/");
+};
+
+module.exports = { renderHomePage, renderForm, createMessage };
